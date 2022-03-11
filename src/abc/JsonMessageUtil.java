@@ -15,7 +15,7 @@ public class JsonMessageUtil {
   //-------------------------------------------------------------------------//
   //  msgToJson()                                                            //
   //-------------------------------------------------------------------------//
-  public static String msgToJson( ChatMessage  msg ) {
+  public static String msgToJson( ChatMessage  msg ) throws Exception {
     
     ensure_Mapper_Exists();
     
@@ -28,7 +28,7 @@ public class JsonMessageUtil {
   //-------------------------------------------------------------------------//
   //  jsonToMsg()                                                            //
   //-------------------------------------------------------------------------//
-  public static ChatMessage jsonToMsg( String  json ) {
+  public static ChatMessage jsonToMsg( String  json ) throws Exception {
     
     ensure_Mapper_Exists();
     
@@ -43,8 +43,10 @@ public class JsonMessageUtil {
   //-------------------------------------------------------------------------//
   private static void ensure_Mapper_Exists() {
     
-    ObjectMapper mapper = new ObjectMapper();
-    mapper.enable( SerializationFeature.INDENT_OUTPUT );
+    if (null == mapper) {
+      mapper = new ObjectMapper();
+      mapper.enable( SerializationFeature.INDENT_OUTPUT );
+    } //if
     
   } //ensure_Mapper_Exists()
   
