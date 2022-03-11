@@ -13,6 +13,7 @@ public class ChatMessage implements Serializable {
   public String          from      ;
   public String          to        ;
   public String          body      ;
+  public boolean         shown     ;
   
   
 } //class
