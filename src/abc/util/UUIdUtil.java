@@ -1,4 +1,4 @@
-package abc;
+package abc.util;
 
 import java.util.UUID;
 

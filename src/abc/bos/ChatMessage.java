@@ -1,4 +1,4 @@
-package abc;
+package abc.bos;
 
 import java.io.Serializable;
 
