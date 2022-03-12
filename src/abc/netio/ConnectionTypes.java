@@ -1,7 +1,7 @@
 package abc.netio;
 
 
-public class ConnectionsTypes {
+public class ConnectionTypes {
   
   //-------------------------------------------------------------------------//
   //  Constants                                                              //
