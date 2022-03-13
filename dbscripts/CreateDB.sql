@@ -1,4 +1,4 @@
-create table ChatMessage (
+create CACHED table ChatMessage (
   timeStamp    timestamp     not null ,
   id           varchar(50)   not null ,
   sender       varchar(50)   not null ,
